@@ -16,6 +16,7 @@ set fileencodings=utf-8,gbk
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set mouse=n
 
 """"""""""""""""""""""""""""""
 " lookupfile setting
@@ -26,6 +27,14 @@ let g:LookupFile_PreservePatternHistory = 1     "±£´æ²éÕÒÀúÊ·
 let g:LookupFile_AlwaysAcceptFirst = 1          "»Ø³µ´ò¿ªµÚÒ»¸öÆ¥ÅäÏîÄ¿
 let g:LookupFile_AllowNewFiles = 0              "²»ÔÊÐí´´½¨²»´æÔÚµÄÎÄ¼þ
 "let g:LookupFile_TagExpr='"./filenametags"'
+"
+""""""""""""""""""
+""minibufexplore""
+""""""""""""""""""
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1
 
 function! LookupFile_IgnoreCaseFunc(pattern)
         let _tags = &tags
@@ -195,6 +204,8 @@ let Tlist_Auto_Open=1
 let Tlist_GainFocus_On_ToggleOpen=1 
 "让taglist始终解释文件中的tag，不管taglist窗口有没有打开"
 let Tlist_Process_File_Always=1
+"设置窗口大小
+let Tlist_WinWidth = 25
 "
 "
 "-------------------------------------------NERD_tree.vim--------------------->>
@@ -212,7 +223,7 @@ let NERDTreeSortOrder=['//$','/.cpp$','/.c$', '/.h$', '/.py$', '/.lua$', '*']
 "不分大小写排序"
 let NERDTreeCaseSensitiveSort=0 
 "设置窗口尺寸"
-let NERDTreeWinSize=30
+let NERDTreeWinSize=20
 "是否显示行号"
 "let NERDTreeShowLineNumbers=1
 "是否显示书签"
