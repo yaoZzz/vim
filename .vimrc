@@ -326,3 +326,4 @@ function QuickSearch()
 endfunction
 
 
+set cscopequickfix=s-,c-,d-,i-,t-,e-
